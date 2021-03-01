@@ -59,6 +59,28 @@ $(document).ready(function () {
         playRecording(recordedNotes);
     });
 
+    let songOneNotes =["D,3", "E,4", "E,4", "E,4",
+        "E,4", "E,4", "E,4", "D,4", "C,5", "C,5", "C,5", "C,5", "D,3", "D,3", "C,4", "B,5", "A,3", "A,3", "E,4", "E,4", "E,4", "E,4", "G,5", "G,5",
+        "E,3", "C,4", "C,4", "D,5", "E,4", "D,4", "C,5", "D,4","E,5","E,3","G,4","A,4","G,3","E,4","G,5","G,5","G,5" ,"F,3","E,4","F,4","E,3",
+        "E,3","E,4","D,5","C,5","D,4","D,4","E,3","D,3","C,3","A,4","D,4","D,4","G,5","G,5","D,4","D,4","A,5","A,4","A,3","G,3","A,4"];
+
+   $("#songOneButton").click(function () {
+        playRecording(songOneNotes);
+   });
+
+    let songTwoNotes = ["D,4","E,5", "E,3","E,5","E,3","E,5", "E,3", "C,5", "C,4","F,5","G,5","A,3","A,4","A,5"];
+
+    $("#songTwoButton").click(function () {
+        playRecording(songTwoNotes);
+    });
+
+
+
+
+
+
+
+
     // Assign functions to the other buttons
     $("#recordButton").click(toggleRecording);
     $("#clearButton").click(clearRecording);
